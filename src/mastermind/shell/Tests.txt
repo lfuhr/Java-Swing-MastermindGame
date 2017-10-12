@@ -1,0 +1,80 @@
+mastermind> 
+mastermind> m 0 0 0 0
+black: 0 white: 0
+mastermind> m 1 1 1 1
+black: 2 white: 0
+mastermind> m 1 1 2 2
+black: 1 white: 1
+mastermind> m 1 3 1 3
+Congratulations! You needed 4 moves.
+mastermind> m 1 1 1 1
+Error! Game is over. Please start a new one with "new"
+mastermind> n
+mastermind> m 1 1 1 1
+black: 0 white: 0
+mastermind> m 1 1 1 1
+black: 0 white: 0
+mastermind> m 1 1 1 1
+black: 0 white: 0
+mastermind> m 1 1 1 1
+black: 0 white: 0
+mastermind> m 1 1 1 1
+black: 0 white: 0
+mastermind> m 1 1 1 1
+black: 0 white: 0
+mastermind> m 1 1 1 1
+No more moves - solution: 0 5 3 4
+mastermind> help
+
+Everybody knows the rules of Mastermind. If you don't,
+please search search the web. Just to remind you: One
+black peg means that one coloured peg of the right color
+is in the right place.
+
+quit
+Quits the Application.
+
+switch
+Switches the roles of the player and the Computer.
+Initially The Comuter is the coder and the player is the
+guesser
+
+new
+Creates a new game whitout chaning the Roles.
+
+move
+(only if the player is guessing)
+Sets the 4 coloured pegs as a guess.
+The command musst be followed by 4 numbers from 0 to 5.
+
+eval
+(only if the computer is guessing)
+Defines a Rating for the move the Computer has taken.
+The command must be followed by 2 numbers from 0 to 4,
+where the first one indicates the number of black and the
+second one number of white pegs.
+
+mastermind> s
+machine guess: 0 0 0 0
+mastermind> e 0 0
+machine guess: 1 1 1 1
+mastermind> e 2 0
+machine guess: 1 1 2 2
+mastermind> e 1 1
+machine guess: 1 3 1 3
+mastermind> e 4 0
+Wow! I did it!
+mastermind> e 0 1
+Error! Game is over. Please start a new one with "new"
+mastermind> n
+machine guess: 0 0 0 0
+mastermind> e 4 1
+Error! This is not a valid Rating. black: 4 white: 1
+mastermind> 
+mastermind> 6 5 4 3
+Error! Invalid command 6
+mastermind> e 0
+Error! This commad needs 2 arguments.
+mastermind>  e 0 0
+machine guess: 1 1 1 1
+mastermind> quit
